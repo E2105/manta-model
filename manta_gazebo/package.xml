@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>manta_gazebo</name>
+  <version>1.0.0</version>
+  <description>Package with launch files for demonstration of Manta</description>
+
+  <maintainer email="borgepahlm@gmail.com">Børge Pahlm</maintainer>
+
+  <author> email="borgepahlm@gmail.com">Børge Pahlm</author>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>manta_description</exec_depend>
+  <exec_depend>manta_control</exec_depend>
+
+</package>
