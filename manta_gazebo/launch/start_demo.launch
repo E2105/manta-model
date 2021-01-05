@@ -1,7 +1,7 @@
 <launch>
   
   <!-- Loads the world -->
-  <include file="$(find uuv_gazebo_worlds)/launch/empty_underwater.world"/>
+  <include file="$(find uuv_gazebo_worlds)/launch/empty_underwater_world.launch"/>
 
   <!-- Spawns the Manta model -->
   <include file="$(find manta_description)/launch/upload_manta_cyb_pool.launch"/>
