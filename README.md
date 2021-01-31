@@ -1,17 +1,34 @@
-## The Manta ROV
+# The Manta Model
 
-This is repository contains the necessary files to simulate our ROV named Manta.
+This repo contains the need files to load the simulated ROV and it's control system with launch files.
+For good examples look at this: https://github.com/uuvsimulator/rexrov2
 
-The start_demo launch file depends on:
+## Folders and their contents
 
-- The UUV simulator (the loaded world is from there)
+### manta_description
 
-- manta_description (image_view, robot_state_publisher, ...)
+Mesh.
 
-- manta_control (thruster_manager, ...)
+### manta_control
 
-The launch file for operating Manta (manta_simulator) is a part of the Vortex-AUV project
+Configs.
 
-- use the pc.launch
+### manta_gazebo
 
-Follow this template: https://github.com/uuvsimulator/rexrov2
+Launch files for the simulator in Gazebo.
+
+## Example: start_demo.launch
+
+Dependencies:
+
+1. Installed UUV simulator
+
+This is where the world is saved and loaded from.
+
+2. The description of the ROV: manta_description
+
+It has the needed files for simulation.
+
+3. The configuration of the ROV: manta_control
+
+It controls the thruster manager, and movable thrusters and all that.
