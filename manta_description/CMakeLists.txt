@@ -21,6 +21,6 @@ catkin_package(
 catkin_install_python(PROGRAMS scripts/spawn_model
                       DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
-install(DIRECTORY launch Media worlds models world_models
+install(DIRECTORY launch mesh robots urdf
         DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
         PATTERN "*~" EXCLUDE)
